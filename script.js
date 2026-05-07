@@ -239,6 +239,16 @@ if (form) {
         } else {
             dateError.innerText = '';
         }
+
+        // Time Validation
+        const time = document.getElementById('time');
+        const timeError = document.getElementById('timeError');
+        if (time.value === '') {
+            timeError.innerText = 'Time is required';
+            isValid = false;
+        } else {
+            timeError.innerText = '';
+        }
         
         // Department Validation
         const dept = document.getElementById('department');

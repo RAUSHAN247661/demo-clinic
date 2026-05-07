@@ -277,19 +277,25 @@
                                 <span class="error-msg" id="phoneError"></span>
                             </div>
                             <div class="form-group">
-                                <input type="date" id="date" required>
-                                <span class="error-msg" id="dateError"></span>
+                                <select id="department" required>
+                                    <option value="" disabled selected>Select Department</option>
+                                    <option value="general">General Checkup</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="dental">Dental Care</option>
+                                    <option value="cardiology">Cardiology</option>
+                                </select>
+                                <span class="error-msg" id="deptError"></span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <select id="department" required>
-                                <option value="" disabled selected>Select Department</option>
-                                <option value="general">General Checkup</option>
-                                <option value="pediatrics">Pediatrics</option>
-                                <option value="dental">Dental Care</option>
-                                <option value="cardiology">Cardiology</option>
-                            </select>
-                            <span class="error-msg" id="deptError"></span>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" required title="Preferred Date">
+                                <span class="error-msg" id="dateError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" id="time" required title="Preferred Time">
+                                <span class="error-msg" id="timeError"></span>
+                            </div>
                         </div>
                         <div class="form-group">
                             <textarea id="message" rows="4" placeholder="Your Message (Optional)"></textarea>
