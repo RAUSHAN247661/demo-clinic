@@ -203,18 +203,49 @@ if (form) {
         const name = document.getElementById('name');
         const nameError = document.getElementById('nameError');
         if (name.value.trim() === '') {
-            nameError.innerText = 'Name is required';
+            nameError.innerText = 'Patient name is required';
             isValid = false;
         } else {
             nameError.innerText = '';
         }
+
+        // Age Validation
+        const age = document.getElementById('age');
+        const ageError = document.getElementById('ageError');
+        if (age.value.trim() === '') {
+            ageError.innerText = 'Age is required';
+            isValid = false;
+        } else {
+            ageError.innerText = '';
+        }
+
+        // Father's Name Validation
+        const fatherName = document.getElementById('fatherName');
+        const fatherError = document.getElementById('fatherError');
+        if (fatherName.value.trim() === '') {
+            fatherError.innerText = "Father's name is required";
+            isValid = false;
+        } else {
+            fatherError.innerText = '';
+        }
+
+        // Mother's Name Validation
+        const motherName = document.getElementById('motherName');
+        const motherError = document.getElementById('motherError');
+        if (motherName.value.trim() === '') {
+            motherError.innerText = "Mother's name is required";
+            isValid = false;
+        } else {
+            motherError.innerText = '';
+        }
         
-        // Email Validation
+        // Email Validation (Optional)
         const email = document.getElementById('email');
         const emailError = document.getElementById('emailError');
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email.value)) {
-            emailError.innerText = 'Valid email is required';
+        
+        if (email.value.trim() !== '' && !emailRegex.test(email.value)) {
+            emailError.innerText = 'Please enter a valid email address';
             isValid = false;
         } else {
             emailError.innerText = '';

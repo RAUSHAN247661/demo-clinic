@@ -263,19 +263,35 @@
                     <form id="appointmentForm" class="appointment-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="name" placeholder="Your Name" required>
+                                <input type="text" id="name" placeholder="Patient Name" required>
                                 <span class="error-msg" id="nameError"></span>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" placeholder="Your Email" required>
-                                <span class="error-msg" id="emailError"></span>
+                                <input type="number" id="age" placeholder="Patient Age" required min="0" max="120">
+                                <span class="error-msg" id="ageError"></span>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="tel" id="phone" placeholder="Your Phone" required>
+                                <input type="text" id="fatherName" placeholder="Father's Name" required>
+                                <span class="error-msg" id="fatherError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="motherName" placeholder="Mother's Name" required>
+                                <span class="error-msg" id="motherError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Contact Email (Optional)">
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Contact Phone" required>
                                 <span class="error-msg" id="phoneError"></span>
                             </div>
+                        </div>
+                        <div class="form-row">
                             <div class="form-group">
                                 <select id="department" required>
                                     <option value="" disabled selected>Select Department</option>
@@ -286,19 +302,17 @@
                                 </select>
                                 <span class="error-msg" id="deptError"></span>
                             </div>
-                        </div>
-                        <div class="form-row">
                             <div class="form-group">
                                 <input type="date" id="date" required title="Preferred Date">
                                 <span class="error-msg" id="dateError"></span>
                             </div>
-                            <div class="form-group">
-                                <input type="time" id="time" required title="Preferred Time">
-                                <span class="error-msg" id="timeError"></span>
-                            </div>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" rows="4" placeholder="Your Message (Optional)"></textarea>
+                            <input type="time" id="time" required title="Preferred Time">
+                            <span class="error-msg" id="timeError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="problem" rows="3" placeholder="Describe the problem (Optional)"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit Request</button>
                     </form>
