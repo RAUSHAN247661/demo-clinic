@@ -51,6 +51,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
 
 body {
@@ -1222,6 +1223,11 @@ header:not(.scrolled) .hamburger .bar {
     transform: translateX(0);
 }
 
+/* Fix for animation overflow */
+.reveal-left, .reveal-right {
+    will-change: transform, opacity;
+}
+
 /* =========================================
    Media Queries (Responsive Design)
    ========================================= */
@@ -1377,7 +1383,8 @@ header:not(.scrolled) .hamburger .bar {
     }
     
     .image-grid {
-        max-width: 320px;
+        max-width: 280px;
+        margin: 0 auto;
     }
 }
 
@@ -1420,7 +1427,7 @@ header:not(.scrolled) .hamburger .bar {
     
     .floating-card {
         padding: 10px 15px;
-        left: -10px;
+        left: 0;
     }
     .floating-card i {
         font-size: 1.5rem;
