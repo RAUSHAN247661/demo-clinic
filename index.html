@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Healthcare and Medical Clinic providing exceptional services.">
+    <title>MediCare | Modern Health Clinic</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Top Bar with Location -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-info">
+                <span><i class="fas fa-map-marker-alt"></i> Muzaffarpur, Bihar, India</span>
+                <span><i class="fas fa-envelope"></i> info@medicare.com</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i> Medi<span>Care</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#doctors"><i class="fas fa-user-md"></i> Doctors</a></li>
+                <li><a href="#testimonials"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <a href="#appointment" class="btn btn-primary nav-btn">Book Appointment</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1 class="fade-in-up">Your Health, <br>Our Priority</h1>
+                <p class="fade-in-up delay-1">Providing state-of-the-art healthcare services with a touch of compassion. Experience medical excellence like never before.<br><br><i class="fas fa-map-marker-alt" style="color: #1ed760; margin-right: 8px;"></i> Muzaffarpur, Bihar, India</p>
+                <div class="hero-btns fade-in-up delay-2">
+                    <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-2">
+                <div class="image-grid">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor consulting patient" class="img-main">
+                    <div class="floating-card glass-effect">
+                        <i class="fas fa-heartbeat"></i>
+                        <div>
+                            <h4>Top Doctors</h4>
+                            <p>Award winning care</p>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medical team" class="img-secondary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Statistics -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal-left">
+                    <h4 class="section-subtitle">About Our Clinic</h4>
+                    <h2 class="section-title">We Are A Trusted Healthcare Center</h2>
+                    <p>MediCare is committed to delivering the highest quality patient care. Our state-of-the-art facilities and experienced medical professionals ensure you receive the best treatment possible.</p>
+                    <p>We blend modern medical technology with compassionate care to provide a holistic healing experience for you and your family.</p>
+                    <a href="#services" class="btn btn-primary mt-2">Discover More</a>
+                </div>
+                <div class="about-stats reveal-right">
+                    <div class="stat-box glass-effect">
+                        <i class="fas fa-users"></i>
+                        <h3 class="counter" data-target="15000">0</h3>
+                        <p>Patients Treated</p>
+                    </div>
+                    <div class="stat-box glass-effect">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3 class="counter" data-target="25">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-box glass-effect">
+                        <i class="fas fa-user-md"></i>
+                        <h3 class="counter" data-target="45">0</h3>
+                        <p>Expert Doctors</p>
+                    </div>
+                    <div class="stat-box glass-effect">
+                        <i class="fas fa-hospital"></i>
+                        <h3 class="counter" data-target="12">0</h3>
+                        <p>Specialty Clinics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services bg-light section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">Our Services</h4>
+                <h2 class="section-title">Comprehensive Care For You</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>General Checkup</h3>
+                    <p>Comprehensive health evaluations and routine checkups to keep your well-being on track.</p>
+                </div>
+                <div class="service-card reveal-up delay-1">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for infants, children, and adolescents by expert pediatricians.</p>
+                </div>
+                <div class="service-card reveal-up delay-2">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Dental Care</h3>
+                    <p>Advanced dentistry services from routine cleanings to complex procedures.</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Complete heart care including diagnostics, treatment, and preventive cardiology.</p>
+                </div>
+                <div class="service-card reveal-up delay-1">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Laboratory Tests</h3>
+                    <p>Accurate and timely diagnostic testing with our advanced laboratory facilities.</p>
+                </div>
+                <div class="service-card reveal-up delay-2">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services equipped to handle critical medical situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">Meet Our Team</h4>
+                <h2 class="section-title">Our Dedicated Doctors</h2>
+            </div>
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card reveal-up">
+                    <div class="doctor-img">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Sarah Johnson">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <span>Cardiologist</span>
+                        <p>15+ Years Experience</p>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="doctor-card reveal-up delay-1">
+                    <div class="doctor-img">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Michael Chen">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <span>Pediatrician</span>
+                        <p>12+ Years Experience</p>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="doctor-card reveal-up delay-2">
+                    <div class="doctor-img">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Emily Davis">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Davis</h3>
+                        <span>General Surgeon</span>
+                        <p>10+ Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Contact Section -->
+    <section id="appointment" class="appointment-contact bg-light section-padding">
+        <div class="container">
+            <div class="appointment-grid">
+                <!-- Appointment Form -->
+                <div class="appointment-form-container glass-effect reveal-left">
+                    <div class="section-header">
+                        <h4 class="section-subtitle">Book Now</h4>
+                        <h2 class="section-title">Make an Appointment</h2>
+                    </div>
+                    <form id="appointmentForm" class="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Your Phone" required>
+                                <span class="error-msg" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="date" required>
+                                <span class="error-msg" id="dateError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="department" required>
+                                <option value="" disabled selected>Select Department</option>
+                                <option value="general">General Checkup</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="dental">Dental Care</option>
+                                <option value="cardiology">Cardiology</option>
+                            </select>
+                            <span class="error-msg" id="deptError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info & Map -->
+                <div id="contact" class="contact-info-container reveal-right">
+                    <div class="section-header">
+                        <h4 class="section-subtitle">Get In Touch</h4>
+                        <h2 class="section-title">Contact Information</h2>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Muzaffarpur, Bihar, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>info@medicareclinic.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container mt-2">
+                        <!-- Embedded Google Map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114705.54133488775!2d85.31175653634127!3d26.12969966578036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e8a3175529%3A0x7c2d919680f759d!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1715074200000!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">Patient Reviews</h4>
+                <h2 class="section-title">What Our Patients Say</h2>
+            </div>
+            <div class="testimonial-container reveal-up">
+                <div class="testimonial-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The care I received at MediCare was exceptional. The doctors were very attentive and the staff made sure I felt comfortable throughout my visit. Highly recommended!"</p>
+                        <div class="patient-info">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Patient">
+                            <div>
+                                <h4>Jane Doe</h4>
+                                <span>Regular Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">"Very professional environment. The appointment booking was seamless, and I didn't have to wait long. Dr. Chen is amazing with kids!"</p>
+                        <div class="patient-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient">
+                            <div>
+                                <h4>John Smith</h4>
+                                <span>Father of Two</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"State-of-the-art facilities and a very clean clinic. The cardiology department took great care of my father. We are truly grateful."</p>
+                        <div class="patient-info">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patient">
+                            <div>
+                                <h4>Amanda Clark</h4>
+                                <span>Patient Relative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo footer-logo">
+                        <i class="fas fa-heartbeat"></i> Medi<span>Care</span>
+                    </a>
+                    <p>Your trusted healthcare partner providing comprehensive medical services with a focus on patient well-being and advanced care.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#doctors"><i class="fas fa-chevron-right"></i> Our Doctors</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li><span>Monday - Friday</span> <span>8:00 AM - 8:00 PM</span></li>
+                        <li><span>Saturday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Sunday</span> <span>Emergency Only</span></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest health tips and clinic updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 MediCare Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+15551234567" class="call-btn">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
